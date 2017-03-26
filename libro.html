@@ -9,11 +9,22 @@
 	<script type="text/javascript" src="assets/js/funciones.js"></script>
 	<h1>Libro de Visitas</h1>
 	<h2>Comentarios</h2>
+	<div id="comentarios" >
+		<p style="background: black; color: blue; font-size: 30px" align="center">algo</p>
+	</div>
 
-	<form Id="C"> 
-  		<input type="Text" Id="caja" >
+	<form id="C"> 
+ 	    <input type="button" value="Letra Chica" onclick="letraChica()">
+ 	    <input type="button" value="Letra Mediana" onclick="letraMediana()">
+ 	    <input type="button" value="Letra Grande" onclick="letraGrande()">
  	    <input type="button" value="Color de Fondo" onclick="color()">
  	    <input type="button" value="Color de Letra" onclick="colorLetra()">
+ 	    <input type="button" value="Alinear izquierda" onclick="textoIzquierda()">
+ 	    <input type="button" value="Centrar Texto" onclick="centrar()">
+ 	    <input type="button" value="Alinear Derecha" onclick="textoDerecha()">
+  		<br><textarea id="caja" cols="40" rows="5" oninput=""></textarea><br>
+  		<button type="button"  onclick="enviar()" value="Agregar">Enviar comentario</button>
+ 	 	
 	</form>
 </body>
 </html>
