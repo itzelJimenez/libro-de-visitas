@@ -20,13 +20,13 @@ function letraGrande(){
 	document.forms[0].elements["caja"].style.fontSize = '50px';
 }
 function textoIzquierda(){
-	alert("que pedo morros!!!")
+	document.forms[0].elements["caja"].style.textAlign = 'left';
 }
 function centrar(){
-		alert("Soy juana la cubana")
+	document.forms[0].elements["caja"].style.textAlign = 'center';
 }
 function textoDerecha(){
-		alert("Washu pinshi barrio")
+	document.forms[0].elements["caja"].style.textAlign = 'right';
 }
 function enviar (){
 	var nodoParrafo = document.createElement("P");
@@ -35,13 +35,20 @@ function enviar (){
 	var comentarios = document.getElementById('comentarios');
 	nodoParrafo.appendChild(comentarioTextNode);
 	comentarios.appendChild(nodoParrafo);
-
+	//IMPORTAR ESTILOS
+	//Importa color de fondo
 	var fondo = document.getElementById("caja").style.background;
 	nodoParrafo.style.background = fondo;
+	//Importa color de texto
 	var colorLetra = document.getElementById("caja").style.color;
 	nodoParrafo.style.color = colorLetra;
+	//Importa tamaño de texto
+	var size = document.getElementById("caja").style.fontSize;
+	nodoParrafo.style.fontSize = size;
+	//Importa alineación de texto
+	var alineacion = document.getElementById("caja").style.textAlign;
+	nodoParrafo.style.textAlign = alineacion;
 	
-
 }
 
 
