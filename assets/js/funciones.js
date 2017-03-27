@@ -11,7 +11,7 @@ function colorLetra(){
 	document.getElementById('previo').style.color=colorTexto
 }
 function letraChica(){
-	document.getElementById('previo').style.fontSize = '10px';
+	document.getElementById('previo').style.fontSize = '20px';
 }
 function letraMediana() {
 	document.getElementById('previo').style.fontSize = '30px';
@@ -35,6 +35,9 @@ function enviar (){
 	var comentarios = document.getElementById('comentarios');
 	nodoParrafo.appendChild(comentarioTextNode);
 	comentarios.insertBefore(nodoParrafo, comentarios.childNodes[0]);
+
+	var separador = document.createElement("hr");
+    comentarios.insertBefore(separador, comentarios.firstChild);
 	
 
 	//IMPORTAR ESTILOS

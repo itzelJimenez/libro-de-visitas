@@ -2,15 +2,16 @@
 <html>
 <head>
 	<title>Libro de Visitas</title>
-
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Cabin|Hind|Lora" rel="stylesheet">
 </head>
-<body style="margin: 80px;">
-	<style type="text/css" src="estilo.css"></style>
+<body background="cajamisteriosa.jpg" style="margin: 100px;" >
 	<script type="text/javascript" src="assets/js/funciones.js"></script>
-	<h1>Libro de Visitas</h1>
-	<h2>Comentarios</h2>
+	
+	<h1 align="right" style="font-size: 100px; font-family:'Baloo Bhaina', cusive; color: #AB2F14">Caja virtual de la verdad</h1>
+	<h2 style="font-family: 'Cabin'; font-size: 35px; color: #AB2F14; margin-left: 80px">Por favor ingresa tus comentarios o sugerencias</h2>
 	<div id="comentarios" >
-		<p style="background: black; color: blue; font-size: 30px" align="center">algo</p>
+		<p style="background: gray; color: white; font-size: 20px" align="center">* Quiero la bendición Apu!!!</p><hr>
+		<p style="background: #86C099; color: black; font-size: 30px" align="right">* Hola mami! Soy el primer comentario</p>
 	</div>
 
 	<form id="C"> 
@@ -23,7 +24,8 @@
  	    <input type="button" value="Centrar Texto" onclick="centrar()">
  	    <input type="button" value="Alinear Derecha" onclick="textoDerecha()">
   		<br><textarea id="caja" cols="80" rows="5" oninput="previsualizar()"></textarea><br>
-  		<button type="button"  onclick="enviar()" value="Agregar">Enviar comentario</button>
+  		<button type="button"  onclick="enviar()" value="Agregar">Enviar comentario</button><br>
+  		<br><label style="font-family: 'Cabin'; font-size: 25px; color: #DF3F1D; margin-left: 80px">Tu comentario quedará así:</label>
  	 	<p id="previo"></p>
 	</form>
 </body>
