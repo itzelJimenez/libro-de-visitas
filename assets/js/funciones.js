@@ -29,6 +29,13 @@ function textoDerecha(){
 	document.getElementById('previo').style.textAlign = 'right';
 }
 function enviar (){
+	var comentarios = document.getElementById('comentarios');
+	var nuevoComentario = document.getElementById("previo");
+	var nuevoNodo = nuevoComentario.cloneNode(true);
+	nuevoNodo.id = Date.now();
+	comentarios.insertBefore(nuevoNodo, comentarios.firstChild);
+
+	/* CAMINO LARGO
 	var nodoParrafo = document.createElement("P");
 	var nuevoComentario = document.getElementById("previo").innerHTML;
 	var comentarioTextNode = document.createTextNode(nuevoComentario);
@@ -53,7 +60,7 @@ function enviar (){
 	//Importa alineación de texto
 	var alineacion = document.getElementById("previo").style.textAlign;
 	nodoParrafo.style.textAlign = alineacion;
-	
+	*/
 }
 
 function previsualizar(){
@@ -64,5 +71,11 @@ function previsualizar(){
 	
 }
 
-
+function agregarImagen(){
+	var imagenAAgregar = prompt("url")
+	var crearImagen = document.createElement("img");
+	var previo = document.getElementById("previo");
+	crearImagen.src = imagenAAgregar;
+	previo.appendChild(crearImagen)
+}
 
